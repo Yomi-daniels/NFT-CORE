@@ -1034,13 +1034,12 @@ cursor: pointer;
     
   }
 
-  @media (max-width:320px) {
+  @media (max-width:321px) {
     .hero-section .hero-text-container .hero-header h1.Super{
         font-size: .5rem;
 
     }
 
-   
     .sub-heading-btns button{
         font-size: .9rem;
     }
@@ -1051,9 +1050,14 @@ cursor: pointer;
     }
 
     header{
-        padding: 0 1rem;
+        padding:1rem;
     }
-   
+
+    .hero-header > h1,span{
+        font-size: 3rem;
+        line-height: 1;
+    }
+    
   }
 
   .section-2{
@@ -1461,7 +1465,7 @@ cursor: pointer;
 
 @media (max-width:318px) {
     .bid-img{
-        max-width: 250px;
+        max-width: 220px;
     }
 
     .bid-image img{
@@ -2149,6 +2153,17 @@ cursor: pointer;
 
     .section-6-follow{
         font-size: 1rem;
+    }
+}
+
+@media(max-width:321px){
+    .section-6-container{
+        padding: 0;
+        margin: 0;
+        margin-inline: auto;
+    }
+    .section-6-container-card .main-card{
+        width: 290px;
     }
 }
 

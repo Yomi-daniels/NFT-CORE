@@ -46,7 +46,9 @@ body{
 }
 .wrapper span{
     position: fixed;
-    animation: animate-img 2s linear infinite;
+    animation: animate-img 1.6s linear infinite;
+    /* filter: blur(2px); */
+    z-index: 99;
 }
 
 .wrapper span:nth-child(1){
@@ -55,6 +57,70 @@ body{
     top: 5%;
 }
 
+.wrapper span:nth-child(2){
+    left: 10%;
+    animation-delay: 2s;
+    top: 40%;
+}
+
+.wrapper span:nth-child(3){
+    left: 205;
+    animation-delay: 5s;
+    top: 15%;
+}
+
+.wrapper span:nth-child(4){
+    left: 26%;
+    animation-delay: 4s;
+    top: 67%;
+}
+
+.wrapper span:nth-child(5){
+    left: 40%;
+    animation-delay: 5s;
+    top: 85%;
+}
+
+.wrapper span:nth-child(6){
+    left: 50%;
+    animation-delay: 5s;
+    top: 83%;
+}
+.wrapper span:nth-child(7){
+    left: 60%;
+    animation-delay: 6s;
+    top: 65%;
+}
+
+.wrapper span:nth-child(8){
+    left: 70%;
+    animation-delay: 3.5s;
+    top: 12%;
+}
+.wrapper span:nth-child(9){
+    left: 80%;
+    animation-delay: 9s;
+    top: 75%;
+}
+.wrapper span:nth-child(10){
+    left: 90%;
+    animation-delay: 3s;
+    top: 14%;
+}
+
+@keyframes animate-img {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
 li{
     list-style: none;
 }
@@ -809,7 +875,7 @@ cursor: pointer;
     position: absolute;
     top: 0;
     padding:2rem;
-    z-index: 9999;
+    z-index: 99;
 }
 
 .hero-img-card{
@@ -817,7 +883,7 @@ cursor: pointer;
   position: relative;
   color: #fff;
   position: absolute;
-
+    z-index: 9;
 }
 
 /* .hero-images .wavy{
@@ -1334,6 +1400,7 @@ cursor: pointer;
     width: fit-content;
     height: min-content;
     position: relative;
+    z-index: 100;
     /* border: 1px solid #fff; */
 }
 
@@ -1625,11 +1692,13 @@ cursor: pointer;
 .roadmaps-card{
     position: relative;
     border: 1px solid #15BFFD;
+    background-color: var(--background-color);
     width: 100%;
     height: 300px;
     color: #fff;
     font-family: var(--header-font);
     border-radius: 20px;
+    z-index: 100;
 }
 
 .roadmaps-card::after{
@@ -1667,6 +1736,7 @@ cursor: pointer;
 .roadmaps-arrow{
     display: flex;
     align-items:center;
+
 /* border: 1px solid #fff; */
 }
 
@@ -1724,6 +1794,7 @@ cursor: pointer;
     color: #fff;
     font-family: var(--header-font);
     border-radius: 20px;
+    background-color: var(--background-color);
 }
 
 .roadmaps-card-2::before{
@@ -1792,6 +1863,7 @@ cursor: pointer;
 }
 
 .road-map-small-content{
+    background-color: var(--background-color);
     position: relative;
     border: 1px solid #15BFFD;
     max-width: 400px;
@@ -1804,6 +1876,7 @@ cursor: pointer;
     border: 1px solid transparent; /* Ensure the border is transparent */
     border-image: linear-gradient(to right, var(--color), #1e2069); /* Set linear gradient for the border */
     border-image-slice: 1; /* Ensure the gradient covers the entire border */
+    z-index: 100;
 }
 
 .section-4-container-screen{
@@ -1819,6 +1892,7 @@ cursor: pointer;
     flex-direction: column;
     align-items: center;
       height: 100%;
+
 }
 
 .arrow-left-small{
@@ -1870,7 +1944,7 @@ cursor: pointer;
     width:100%;
     height: 100%;
     margin-inline: auto;
-
+    z-index: 100;
     margin-top: 4rem;
     color: #fff;
     animation: section-5-loop 20s linear infinite ;
@@ -1906,16 +1980,15 @@ cursor: pointer;
 
 
 .section-5-container-cards{
+    z-index: 100;
     padding: 1rem;
     position: relative;
     min-width: 450px;
     height: 100%;
     border:1px solid var(--border-color) ;
     border-radius: 15px;
+    background-color: var(--background-color);
 }
-
-
-
 
 .name-creation{
     display: flex;
@@ -1936,6 +2009,7 @@ cursor: pointer;
     display: flex;
     align-items: center;
     gap: 1em;
+    z-index: 100;
 }
 
 .nft-image img{
@@ -1944,6 +2018,7 @@ cursor: pointer;
     height: 400px;
     object-fit: cover;
     background-size: 100%;
+
 }
 
 .collection-creation{
@@ -2041,6 +2116,7 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
+ 
 }
 @media(max-width:450px){
     .section-6{
@@ -2066,6 +2142,7 @@ cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
 }
 
 .section-6-container-card{
@@ -2073,6 +2150,7 @@ cursor: pointer;
     height: fit-content;
     position: relative;
     margin-top:4rem;
+
 }
 
 
@@ -2188,6 +2266,7 @@ cursor: pointer;
     height: 100%;
     margin-top: 3rem;
     position: relative; 
+    z-index: 100;
 }
 
 .footer-container{

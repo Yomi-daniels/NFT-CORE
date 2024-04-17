@@ -11,7 +11,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: var(--font-family);
-    overflow-x: hidden;
+    overflow-x: hidden!important;
     background-color: #080B2A;
 }
 
@@ -44,7 +44,13 @@ body{
     font-family:Inter;
     src: url(font/Inter/Inter-Regular.otf);
 }
+
+.wrapper{
+ 
+}
+
 .wrapper span{
+    overflow-x: hidden;
     position: fixed;
     animation: animate-img 1.6s linear infinite;
     /* filter: blur(2px); */
@@ -322,6 +328,7 @@ cursor: pointer;
     border-radius: 30px;
     color: #fff;
     font-size: 1rem;
+    width: 250px;
 }
 .search-container-img{
     position: absolute;
@@ -478,6 +485,7 @@ cursor: pointer;
         display: none;
         transition:all 0.3s ease; /* Smooth transition for left movement */
         overflow-y: scroll;
+        overflow-x: hidden!important;
     }
 
 
@@ -560,6 +568,17 @@ cursor: pointer;
 
     .nav-logo{
         gap: .3em;
+    }
+}
+@media (max-width:281px) {
+    #cancelBtn{
+        right: 30px;
+       
+    }
+
+    .hamburger-link-content .save-btn{
+        padding: 1rem;
+        font-size: 1rem;
     }
 }
 
@@ -1136,6 +1155,19 @@ cursor: pointer;
     
   }
 
+  @media(max-width:281px){
+    .hero-header > h1,span{
+        font-size: 2.8rem;
+        line-height: 1;
+    }
+
+    body{
+        padding: 0;
+        margin: 0;
+      
+    }
+  }
+
   .section-2{
     /* border: 1px solid #fff; */
     width: 100%;
@@ -1451,6 +1483,14 @@ cursor: pointer;
     cursor: pointer;
     background-color: transparent;
     border: 1px solid var(--light-blue);
+}
+
+@media(max-width:281px){
+    .bid-btn{
+        width: 100px;
+        font-size: .8rem;
+        padding: .4rem;
+    }
 }
 
 .bid-img{
@@ -1867,7 +1907,7 @@ cursor: pointer;
     position: relative;
     border: 1px solid #15BFFD;
     max-width: 400px;
-    height: 250px;
+    height: 100%;
     color: #fff;
     font-family: var(--header-font);
     border-radius: 20px;
@@ -2258,6 +2298,12 @@ cursor: pointer;
     }
     .section-6-container-card .main-card{
         width: 290px;
+    }
+}
+
+@media (max-width:281px) {
+    .section-6-container-card .main-card{
+        width: 250px;
     }
 }
 
